@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyTAP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class = "black-filter"></div>
+    <div class = "modal">
+        <div class = "close-modal">&#x2715</div>
+        <h1 class = "tipo-voo"></h1>
+        <div class = "estado">
+            <div class = "modal-title">Dia dos Voos</div>
+            <div class = "dia-voo"></div>
+        </div>
+        <div class = "estado">
+            <div class = "modal-title">Estados do voos</div>
+            <div class = "estado-voo"></div>
+        </div>
+        <div class = "voo" id = "voo1">
+            <h1>Primeiro Voo - TP1</h1>
+            <div>
+                <div class = "modal-title">Hora do Voo</div>
+                <div id = "horaVoo"></div>
+            </div>
+        </div>
+        <div class = "voo" id = "voo2"> 
+            <h1>Segundo Voo - TP2</h1>
+            <div>
+                <div class = "modal-title">Hora do Voo</div>
+                <div id = "horaVoo2"></div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class = "mediaquery-sandwich">
+            <ul>
+                <li>
+                    <img id = "blackLogo" src="img/TAPLogo_preto.svg">
+                    <img id = "whiteLogo" src="img/TAPLogo_branco.svg">
+                </li>
+                <li class = "lupa">
+                    <img src = "img/icons/lupapreta.svg"/>
+                </li>
+                <li>
+                    <img id = "imgUserVerde" src = "img/icons/userVerde.svg"/> 
+                </li>
+                <li class = "sandwich-menu">
+                    &#9776;
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class = "top-header">
+                <li>FLYTAP</li>
+                <li>
+                    <a href = "https://www.tapairportugal.com/pt/">
+                        <span>INSTITUCIONAL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://www.tapcorporate.com/">
+                        <span>
+                            TAP CORPORATE
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://www.tapcargo.com/pt">
+                        <span>TAP AIR CARGO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://store.flytap.com/">
+                        <span>TAP STORE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href = "https://www.flytap.com/-/media/Flytap/footer-content/legal/TAP-Intermediacao-Credito-_JUL23.pdf">
+                        <span>INTERMEDIAÇÃO DE CRÉDITO</span>
+                    </a>
+                </li>
+                <li>
+                    <img src = "img/flag-portugal.svg" />
+                    <span>PT</span>
+                    <span class="span2">Portugal/Português</span>
+                </li>
+                <li class="requirements-container">
+                    <img src = "img/icons/restricoes.svg">
+                    <span>Requisitos de viagem</span>
+                </li>
+            </ul>
+            <div class = "main-header">
+                <ul>
+                    <li>
+                        <img id = "blackLogo" src="img/TAPLogo_preto.svg">
+                        <img id = "whiteLogo" src="img/TAPLogo_branco.svg">
+                        <img id = "mediaLogo" src="img/TAPLogo_media.svg">
+                    </li>
+                    <li>
+                        <div class = "header-title">
+                            <span>Viajar</span>
+                        </div>
+                        <div class = "list-menu-container-center">
+                            <div class = "list-menu-container">
+                                <div class = "list-menu">
+                                    <div class = "list-container">
+                                        <div class = "list-title">
+                                            <img src = "img/icons/iconmundo.svg">
+                                            <span>Explorar</span>
+                                        </div>
+                                        <ul class = "list">
+                                            <li>
+                                                <a>
+                                                    <span>Destinos TAP</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Inspiração para a sua viagem</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Pesquisar por preço</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Melhores ofertas</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Promoções</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class = "list-container">
+                                        <div class = "list-title">
+                                            <img src = "img/icons/iconcalendario.svg">
+                                            <span>Reservar</span>
+                                        </div>
+                                        <ul class = "list medium">
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Pesquisar voos
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Voo + comboio
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Stopover
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Ponte Aérea
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        TAP Gift Card
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class = "list-container">
+                                        <div class = "list-title">
+                                            <img src = "img/icons/aviao.svg">
+                                            <span>Viajar na TAP</span>
+                                        </div>
+                                        <ul class = "list medium">
+                                            <li>
+                                                <a>
+                                                    <span>Tarifas TAP</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Viajar em família</span>
+                                                </a>    
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Passageiros com mobilidade reduzida</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Viajar em grupo</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Viajar em negócios</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Viajar com animais</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "requirements-container">
+                                    <img src = "img/icons/restricoes.svg">
+                                    <span>Requisitos de viagem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "header-title">
+                            <span>Gerir reserva</span>
+                        </div>
+                        <div class = "list-menu-container-center">
+                            <div class = "list-menu-container">
+                                <div class = "list-menu">
+                                    <div class = "list-container">
+                                        <div class = "list-title">
+                                            <img src = "img/icons/iconmundo.svg">
+                                            <span>Gerir e adicionar serviços à reserva</span>
+                                        </div>
+                                        <ul class = "list medium">
+                                            <li>
+                                                <a>
+                                                    <span>Gestão da reserva</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Extras e Upgrades</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Alugar uma viatura</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Fatura online</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>TAP Vouchers</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>Cancelamento e reembolso</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class = "list-container">
+                                        <div class = "list-title">
+                                            <img src = "img/icons/iconcalendario.svg">
+                                            <span>Preparar a viagem</span>
+                                        </div>
+                                        <ul class = "list medium">
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Bagagem
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Travel checklist
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Necessidades especiais
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Perder o medo de voar
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Documentação
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a>
+                                                    <span>
+                                                        Requisitos de viagem
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class = "requirements-container">
+                                    <img src = "img/icons/restricoes.svg">
+                                    <span>Requisitos de viagem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "header-title">
+                            <span>Check-in</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "header-title">
+                            <span>Antes de partida</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "header-title">
+                            <span>TAP Miles&Go</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "header-title">
+                            <span>Ajuda</span>
+                        </div>
+                    </li>
+                    <li class = "login">
+                        <img id = "imgUser" src = "img/icons/user.svg"/> 
+                        <img class = "imgUserVerde" src = "img/icons/userVerde.svg"/> 
+                        <span>Login e Registro</span>
+                    </li>
+                    <li>
+                        <img src = "img/icons/lupa.svg"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class = "background-container">
+        <div class = "slide">
+            <div class = "text-container">
+                <div class = "text">
+                    <h1>Descubra os novos menus da<br> Classe Executiva</h1>
+                    <p>Os ingredientes locais são as nossas estrelas!</p>
+                </div>
+                <button>Saiba mais</button>
+            </div>
+            <div class = "image-boxshadow">
+                <img src = "img/background1.jpg">
+            </div>
+        </div>
+        <div class = "slide">
+            <div class = "text-container">
+                <div class = "text">
+                    <h1>Black FLYday: Não, os preços<br> não istão erradus</h1>
+                    <p>Reserve até 4 de dezembro!</p>
+                </div>
+                <button>Reserve já</button>
+            </div>
+            <div class = "image-boxshadow">
+                <img src = "img/background2.jpg">
+            </div>
+        </div>
+        <div class = "slide">
+            <div class = "text-container">
+                <div class = "text">
+                    <h1>Ganhe 2x milhas: o dobro das<br> razões para viajar</h1>
+                    <p>Só até 5 de dezembro, compre milhas e receba o dobro.</p>
+                </div>
+                <button>Saiba mais</button>
+            </div>
+            <div class = "image-boxshadow">
+                <img src = "img/background3.jpg">
+            </div>
+        </div>
+        <div class = "slide">
+            <div class = "text-container">
+                <div class = "text">
+                    <h1>Descubra os novos menus da<br> Classe Executiva</h1>
+                    <p>Os ingredientes locais são as nossas estrelas!</p>
+                </div>
+                <button>Saiba mais</button>
+            </div>
+            <div class = "image-boxshadow">
+                <img src = "img/background1.jpg">
+            </div>
+        </div>
+    </section>
+    <section class = "info-container">
+        <div class = "dots-container">
+            <div class = "active" onclick = "changeSlide(1)"></div>
+            <div onclick = "changeSlide(2)"></div>
+            <div onclick = "changeSlide(3)"></div>
+        </div>
+        <div class = "info">
+            <ul class = "multi-menu-container">
+                <li class = "active">
+                    <button onclick = "changeMenu(1)">
+                        <div class = "icon-menu">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--calendar"></use>
+                            </svg>
+                        </div>
+                        <span class = "label-menu">
+                            Reservar um voo
+                        </span>
+                        <div class = "arrows">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--bottom"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--top"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class = "main-menu-container" id = "menu1">
+                        <ul class = "main-menu-header">
+                            <li>
+                                <ul>
+                                    <li class = "active">Ida e volta</li>
+                                    <li>Só ida</li>
+                                    <li>Multi-city</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Pagar com milhas
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Mostrar todas as datas e melhores ofertas
+                                </label>
+                            </li>
+                        </ul>
+                        <div class = "main-menu-options">
+                            <div class = "main-options">
+                                <div class = "option">
+                                    <label>De</label>
+                                    <div class = "input-container">
+                                        <div>LIS</div>
+                                        <input type = "text" value = "Lisboa, Portugal" disabled>
+                                    </div>
+                                </div>
+                                
+                                <div class = "option-icon">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#plane_related--flights_inbound_and_outbound"></use>
+                                    </svg>
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#general--arrow--long_both"></use>
+                                    </svg> 
+                                </div>
+                                <div class = "option">
+                                    <label>Para onde?</label>
+                                    <div class = "input-container">
+                                        <input type = "text" value = "JFK, Nova Iorque">
+                                    </div>
+                                </div>
+                                <div class = "option">
+                                    <label>Quando?</label>
+                                    <div class = "input-container">
+                                        <input type="date">                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "line-container">  
+                                <svg>
+                                    <use xlink:href="img/icons/icons.svg#destinations--stopover_experience"></use>
+                                </svg>
+                                <span>Adicionar um TAP Stopover gratuito.</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button onclick = "changeMenu(2)">
+                        <div class = "icon-menu">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#tickets_related--ticket"></use>
+                            </svg>
+                        </div>
+                        <span class = "label-menu">
+                            As minhas viagens
+                        </span>
+                        <div class = "arrows">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--bottom"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--top"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class = "main-menu-container" id = "menu2">
+                    </div>
+                </li>
+                <li>
+                    <button onclick = "changeMenu(3)">
+                        <div class = "icon-menu">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#check-in--check-in"></use>
+                            </svg>
+                        </div>
+                        <span class = "label-menu">
+                            Check-in
+                        </span>
+                        <div class = "arrows">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--bottom"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--top"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class = "main-menu-container" id = "menu3">
+                    </div>
+                </li>
+                <li>
+                    <button onclick = "changeMenu(4)">
+                        <div class = "icon-menu">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#plane_related--world_tracker"></use>
+                            </svg>
+                        </div>
+                        <span class = "label-menu">
+                            Estado do voo
+                        </span>
+                        <div class = "arrows">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--bottom"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#general--arrow--top"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class = "main-menu-container" id = "menu4">
+                        <ul class = "main-menu-header">
+                            <li>
+                                <ul>
+                                    <li class = "active">Por aeroporto</li>
+                                    <li>Por origem e destino</li>
+                                    <li>Por voo</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class = "main-menu-options">
+                            <form>
+                                <div class = "main-options estado-voo">
+                                    <div class = "option">
+                                        <div class = "icon-container">
+                                            <svg>
+                                                <use xlink:href="img/icons/icons.svg#plane_related--ida-volta"></use>
+                                            </svg>
+                                        </div>
+                                        <select placeholder = "Tipo de voo" id = "selectTipo" required>
+                                            <option value = "1">Voo de ida</option>
+                                            <option value = "2">Voo de regresso</option>
+                                        </select>
+                                        <label>Tipo de vôo</label>
+                                    </div>
+                                    <div class = "option">
+                                        <div class = "icon-container">
+                                            <svg>
+                                                <use xlink:href="img/icons/icons.svg#general--calendar"></use>
+                                            </svg>
+                                        </div>
+                                        <select placeholder = "Tipo de voo" id = "selectData" required>
+                                        </select>
+                                        <label>Selecionar datas</label>
+                                    </div>
+                                    <div class = "option">
+                                        <label>De</label>
+                                        <div class = "input-container">
+                                            <div>LIS</div>
+                                            <input type = "text" id = "deInput" value = "Lisboa, Portugal" minlength="4" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type = "submit" value = "Prosseguir    >">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="reservas">
+        <div>
+            <ul>
+                <li>
+                    <a href="">
+                        <div>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#services--rent_a_car"></use>
+                            </svg>
+                        </div>
+                        Aluguer de automóveis
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#transportation--bus"></use>
+                            </svg>
+                        </div>
+                        Reservar um transfer
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#services--book_hotel"></use>
+                            </svg>
+                        </div>
+                        Reservar um hotel
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#money_related--health_insurance_check"></use>
+                            </svg>
+                        </div>
+                        Adicionar seguro
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#destinations--tours_activities"></use>
+                            </svg>
+                        </div>
+                        Visitas & Atividades
+                    </a>
+                </li>
+                <li>
+                    <a href="">Todas as opções de reserva</a>
+                </li>
+            </ul>
+            <div class="reservas-last-link">
+                <a href=""> 
+                    Todas as opções de reserva 
+                    <img src="img/icons/link.svg">
+                </a> 
+            </div>
+
+        </div>
+    </section>
+    <section class="ofertas-voos">
+
+        <div class="ofertas-voos-pre">
+                <h5>As melhores ofertas de voos a partir de</h5> 
+                <select>
+
+                    <option value="0">Lisboa</option>
+                    <option value="1">Lisboa</option>
+                    <option value="2">Lisboa</option>   
+                    <option value="3">Lisboa</option>
+                    <option value="4">Lisboa</option>
+                    <option value="5">Lisboa</option>
+
+                </select>
+        </div>
+        
+        <div class="ofertas-voos-exem">
+            <ul class="mudar-img">
+                <li>
+                    <a href="">
+
+                        <div class="text-info-container">
+                            <div>
+                                <span class="muda-letra">
+                                    Praia
+                                </span>
+                                <span>
+                                    Ida e volta
+                                </span>                        
+                            </div>
+                            <div>              
+                                <span>
+                                    Desde
+                                </span>                       
+                                <span class="muda-letra">
+                                    299€
+                                </span>
+                            </div>
+                        </div>    
+                        <img src="img/praia-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="text-info-container">
+                            <div>
+                                <span class="muda-letra">
+                                    Fortaleza
+                                </span>
+                                <span>
+                                    Ida e volta
+                                </span>                        
+                            </div>
+                            <div>              
+                                <span>
+                                    Desde
+                                </span>                       
+                                <span class="muda-letra">
+                                    677€
+                                </span>
+                            </div>
+                        </div>    
+                        <img src="img/fortaleza-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="">
+                        <div class="text-info-container">
+                            <div>
+                                <span class="muda-letra">
+                                    Valência
+                                </span>
+                                <span>
+                                    Ida e volta
+                                </span>                        
+                            </div>
+                            <div>              
+                                <span>
+                                    Desde
+                                </span>                       
+                                <span class="muda-letra">
+                                    92€
+                                </span>
+                            </div>
+                        </div>    
+                        <img src="img/valencia-banner-newhomepageV2-desktop-1920x500.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class = "dot-container">
+            <div class = "ativo" ></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="ofertas-voos-mid">
+            <div>
+                <select>
+                    <option value="0">Todas</option>
+                    <option value="1">África</option>
+                    <option value="2">América Central e do Sul</option>   
+                    <option value="3">América do Norte</option>
+                    <option value="4">Ásia e Oceânia</option>
+                    <option value="5">Europa e Médio Oriente</option>
+                </select>
+            </div>
+            <div>
+                <a href="">À procura de novas paragens? Consulte o Mapa de Destinos TAP!</a>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="ofertas-voos-exemplos">
+        
+        <div class="ofertas-voos-exemplos-conteiner">
+            <div class="ofertas-voos-conteiner">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/porto-big-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Porto
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                35€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/faro-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Faro
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                35€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/funchal-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Funchal
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                38€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner"v>
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/terceira-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Terceira
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                45€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/madrid-big-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Madrid
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                45€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/barcelona-banner-newhomepageV2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Barcelona
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                46€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner hiden">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/paris-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Paris
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                52€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner hiden">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/lyon-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                        <div>
+                            <span class="muda-letra-2">
+                                Lyon
+                            </span>
+                            <span>
+                                Ida e volta
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                56€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="ofertas-voos-conteiner hiden">
+                <a href="">
+                    <div class="ofertas-voos-conteiner-img">
+                        <img src="img/toulouse-banner-newhomepage-v2-desktop-1920x500.jpg">
+                    </div>
+                    <div class="ofertas-voos-conteiner-let">
+                            <div>
+                                <span class="muda-letra-2">
+                                    Toulouse
+                                </span>
+                                <span>
+                                    Ida e volta
+                                </span>                        
+                            </div>
+                        <div>              
+                            <span>
+                                Desde
+                            </span>                       
+                            <span class="muda-letra-2">
+                                57€
+                            </span>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+        </div>
+        
+        <div class="ver-mais">
+            <button id="mostra-row">
+                Ver mais
+            </button>
+        </div>
+        <div class="ver-todas-as-ofertas hiden">
+            <a href="">
+                Ver todas as Ofertas
+            </a>
+        </div>
+
+    </section>
+
+    <section class="informacoes-uteis">
+        <p>Sugestões e informações úteis para viajantes</p>
+
+
+        <div class="informaçoes-uteis-grid-conteiner">
+            <div class="informaçoes-uteis-img1">
+                <a href="">
+
+                    <div class="info-conteiner-informaçoes-uteis">
+                        <div>
+                            <span>
+                                Abrace Florianópolis
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                A partir de 3 de setembro, abrace Florianópolis com 3 voos diretos por semana.
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Reserve já
+                            </span> >                     
+                        </div>
+                    </div>    
+
+                    <img src="img/BBHP-1920x500.jpg">
+
+                </a>
+            </div>
+            <div class="informaçoes-uteis-img2">
+                <a href="">
+
+                    <div class="info-conteiner-informaçoes-uteis">
+                        <div>
+                            <span>
+                                Descubra os novos menus da Classe Executiva
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                Os ingredientes locais são as nossas estrelas!                            
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Saiba mais 
+                            </span> >                      
+                        </div>
+                    </div>    
+
+                    <img src="img/LocalStars-JUL2024-ChefRodrigoCastelo-BB1920x500.jpg">
+
+                </a>
+            </div>
+            <div class="informaçoes-uteis-img3">
+                <a href="">
+
+                    <div class="info-conteiner-informaçoes-uteis">
+                        <div>
+                            <span>
+                                Energize as suas férias com a Galp
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                A partir de 1 de julho, quem é cliente Galp vai ganhar mais milhas para trocar por viagens TAP.
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Saiba mais
+                            </span> >                      
+                        </div>
+                    </div>    
+
+                    <img src="img/MosaicoDesktop-1920x500.jpg">
+
+                </a>
+            </div>
+            <div class="informaçoes-uteis-img4">
+                <a href="">
+
+                    <div class="info-conteiner-informaçoes-uteis">
+                        <div>
+                            <span>
+                                Portugal começa nas boas-vindas a bordo
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                Vinho do Porto Branco Churchill's Fine White, agora como Welcome Drink na Classe Executiva.                            
+                            </span>                        
+                        </div>
+                        <div>              
+                            <span>
+                                Saiba mais
+                            </span> >                       
+                        </div>
+                    </div>    
+
+                    <img src="img/WelcomeDrink_JUL2024_BB1920x500.jpg">
+                    
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="requisitos">
+        <div>
+            <div>
+                <img src="img/booking-information-big.svg">
+            </div>
+            <div class="info-requesitos">
+                <div>
+                    <span>
+                        Restrições e requisitos de entrada por país
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        Veja as restrições de entrada e requisitos de viagem para países ao redor do mundo.
+                    </span>
+                </div>
+            </div>
+            <div class="saiba-mais-requisitos">
+                <a href="">
+                    Saiba mais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="destaques">
+
+        <p>Destaques do Programa TAP Miles&Go;</p>
+
+        <div class="destaques-container">
+            <div class="container-img-destaques">
+                <img src="img/subscribe-to-tap-miles-and-go-banner-newhomepage-desktop-1920x500.jpg">
+                <div class="destaques-hover-menu"> 
+                    <div class="destaques-hover-menu-top">
+                        <div> 
+                            <img src="img/logo-miles-and-go-programme-black.svg">
+                        </div>
+                        <div class="Ofertas-exclusivas">
+                            <span>
+                                Ofertas exclusivas
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="destaques-hover-menu-text">
+                            
+                            Não é preciso ser um génio para acumular milhas!
+                            
+                        </div>
+                        <div>
+                            <p>
+                                Inscreva-se no TAP Miles&Go e<strong> as primeiras 200 milhas são por nossa conta.</strong>
+                            </p>
+                        </div>
+                        <div class="destaques-hover-menu-links">
+                            <div>
+                                <a href="">
+                                    Inscreva-se agora
+                                </a>
+                            </div>
+                            <div class="last-link">
+                                <a href="">                         
+                                    Conheça o TAP Miles&Go 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="destaques-cartoes">
+                <div>
+                    <p>Cartões que valem viagens</p>
+                </div>
+
+                <div class="destaques-cartoes-text">
+                    Assine os cartões de crédito TAP e acumule ainda mais milhas a cada compra e em cada voo.
+                </div>
+
+                <div>
+                    <span>
+                        Conheça os cartões
+                    </span>+
+                </div>
+
+            </div>
+            <div class="destaques-club">
+                <div class = "linha"></div>
+                <div>
+                    <img src="img/logo-club-tap-miles-and-go-black.svg">
+                </div>
+                <div>
+                    <p>
+                        O clube que lhe dá mais milhas e benefícios
+                    </p>
+                </div>
+                <div>
+                    Com o Club TAP Miles&Go, o seu saldo de milhas cresce todos os meses e as suas viagens vêm com novas vantagens.
+                </div>
+                <div class="destaques-club-link">
+                    <a href = "">
+                        <span>
+                            Adira ao Club
+                        </span> >
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="star-alliance-container">
+    
+        <a href=""><img src="img/tp_980x150.jpeg"></a>
+
+        <p>Ao clicar neste link será direcionado para uma página de internet externa ao flyTAP, cuja acessibilidade e segurança não são controladas pela TAP Air Portugal</p>
+        
+    </section>
+
+    <section class="premios">
+        <div>
+            <ul>
+                <li>
+                    <a href=""><img src="img/selo-4-star-COVID-19-airline.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/premios-tap-10best2020-best-economy-class-europe.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/tap-awards-four-star-global-2022-footer-60px-v2.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/premios-tap-european_debt_deal.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/premios-tap-ftawards-logo.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/premios-tap-airline-raitings.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/premios-tap-melhores-destinos.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/logo-sigla-wta-2023.svg"></a>
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <section class="footer-links-container">
+
+        <div class="footer-links">
+            <div class ="desaparecer">
+                <button>
+                    Links úteis
+                </button>    
+                <ul>
+                    <li>
+                        <a href="">Check-in online</a>
+                    </li>
+                    <li>
+                        <a href="">Gestão da reserva</a>
+                    </li>
+                    <li>
+                        <a href="">Informação de voos</a>
+                    </li>
+                    <li>
+                        <a href="">Contactos</a>
+                    </li>
+                    <li>
+                        <a href="">Atrasos e cancelamentos</a>
+                    </li>
+                    <li>
+                        <a href="">Reembolsos</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/confio-horizontal-cinza.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/livro_reclamaoes.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class ="desaparecer">
+                <button>
+                    Outros recursos importantes
+                </button>
+                <ul>
+                    <li>
+                        <a href="">Condições de transporte</a>
+                    </li>
+                    <li>
+                        <a href="">Condições do Cliente TAP</a>
+                    </li>
+                    <li>
+                        <a href="">Informação legal</a>
+                    </li>
+                    <li>
+                        <a href="">Política de revelação de vulnerabilidades</a>
+                    </li>
+                    <li>
+                        <a href="">Sobre acessibilidade</a>
+                    </li>
+                    <li>
+                        <a href="">Termos e condições TAP Miles&Go</a>
+                    </li>
+                    <li>
+                        <a href="">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="">Política de cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Lista de transportadoras aéreas proibidas na União Europeia</a>
+                    </li>
+                    <li>
+                        <a class="link-verde" href="">Definições de cookies</a>
+                    </li>
+                </ul>
+            </div>
+            <div class ="desaparecer">
+                <button>
+                    Destinos em destaque
+                </button>
+                <ul>
+                    <li>
+                        <a href="">Voos Lisboa</a>
+                    </li>
+                    <li>
+                        <a href="">Voos Porto</a>
+                    </li>
+                    <li>
+                        <a href="">Voos Paris</a>
+                    </li>
+                    <li>
+                        <a href="">Voos Londres</a>
+                    </li>
+                    <li>
+                        <a href="">Voos Luanda</a>
+                    </li>
+                    <li>
+                        <a href="">Voos Brasil</a>
+                    </li>
+                    <li>
+                        <a href="">Lisboa - Nova Iorque</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h6>Newsletter</h6>
+                    </li>
+                    <li>
+                        <p class="subscreva">Subscreva a newsletter TAP e receba todas as ofertas, promoções e novidades na sua caixa de correio. Esteja sempre atento às melhores oportunidades.</p>
+                    </li>
+                    <li>
+                        <a class="link-verde grande" href="">Registe-se</a>
+                    </li>
+                    <li>
+                        <p class="subscreva"><span>Telefone:</span> (+351) 211234400. <span class="italico">Chamada para rede fixa nacional. O custo das comunicações depende do tarifário acordado com o seu operador.</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li>
+                            <h6>Siga-nos</h6>
+                        </li>
+                        <ul class="images-flexrow">
+                            <li>
+                                <a href="">
+                                    <img src="img/facebook.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/twitter.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/pinterest.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/linkedin.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/youtube.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/tiktok.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <h6>TAP App</h6>
+                        </li>
+                        <ul class="img-tapapp">
+                            <li>
+                                <a href="">
+                                    <img src="img/google-play.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                <img src="img/app-store.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                © 2024, TAP. Todos os direitos reservados.
+            </div>
+            <div>
+                <a href="aa">
+                    <img src="img/star.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>
